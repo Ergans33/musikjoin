@@ -17,8 +17,8 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "19002012"))
+API_HASH = getenv("API_HASH", "9ea6c017c0af6616a1ffc82fe06b3c60")
 
 #MUST JOIN
 MUST_JOIN = getenv("MUST_JOIN", "gaclexx")
@@ -26,10 +26,10 @@ if MUST_JOIN.startswith("@gaclexx"):
     MUST_JOIN = MUST_JOIN.replace("@gaclexx", "")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5308857117:AAE5DNHd6DUpto41XdROuCawU1Zg3biDXIY")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://erte:wakwaw123@botmusic.kgdrx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -42,10 +42,10 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001401032607"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Gaclex Player")
 
 # Your User ID.
 OWNER_ID = list(
@@ -77,11 +77,11 @@ SUPPORT_GROUP = getenv(
 # Example:- https://t.me/YukkiSupport
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
-    getenv("ASSISTANT_LEAVE_TIME", "5400")
+    getenv("ASSISTANT_LEAVE_TIME", "2000")
 )  # Remember to give value in Seconds
 
 # Time after which bot will suggest random chats about bot commands.
@@ -90,7 +90,7 @@ AUTO_SUGGESTION_TIME = int(
 )  # Remember to give value in Seconds
 
 # Set it True if you want to delete downloads after the music playout ends from your downloads folder
-AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", None)
+AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", "True")
 
 # Set it True if you want to bot to suggest about bot commands to random chats of your bots.
 AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", None)
@@ -122,7 +122,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
 
 # Cleanmode time after which bot will delete its old messages from chats
 CLEANMODE_DELETE_MINS =
-    getenv("CLEANMODE_MINS", None)
+    getenv("CLEANMODE_MINS", "5")
   # Remember to give value in Seconds
 
 
@@ -140,7 +140,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQC8SJTS2amgF_vKX9cUY72Hgs31YTDkitRMU_-Dv0dxktJC5dd7mW_zFlseZwCOOpa2wsJbxCIdRj2HYBgf5K_5OnBdTTxz_04rgdEIOmkgvkbtxRlp4_Od-_nHsjMy_5yARifryOGDnp6dGq74WIHjwjlkG7ixegE_ZxUq7jWWtpES73bdvWKMAQAACgatssbljN4VmuYjg85Jxgirg6b4ivmy4aVnWQ74gsUmSoS0uErVc07XxUPj0FrRtmpC3_iwGkGUlKJbqS2MTzBMPZmpUGy8VXvbpCTNRuL9nOEEsEFLQvsoz8oAH8Ar2K5WGAEiPWdfzarbXvGoXSvuKkCOAAAAATOJJRMA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
